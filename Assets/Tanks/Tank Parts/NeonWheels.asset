@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b78badb12256524484720f87dbda118, type: 3}
+  m_Name: NeonWheels
+  m_EditorClassIdentifier: 
+  partName: NeonWheels
+  partTexture: {fileID: 2100000, guid: 484e703c69c55d14a870a6d4e6ab3a89, type: 2}
+  partMesh: {fileID: 4363381414685462614, guid: b1e56f1c8bbd8bf46b767364c132c179,
+    type: 3}
+  ownConnectorDistanceOffset: {x: 0, y: -0.65, z: 0}
+  ownConnectorAngleOffset: {x: 0, y: 0, z: 0}
+  partIndividualHealth: 5
+  partType: 2
+  maxSpeed: 0
+  accelSpeed: 0
+  turnSpeed: 0
+  canStrafe: 0

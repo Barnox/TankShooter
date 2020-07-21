@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb44a315b9fe06a4496fa64de5873387, type: 3}
+  m_Name: VanillaRadio
+  m_EditorClassIdentifier: 
+  partName: VanillaRadio
+  partTexture: {fileID: 2100000, guid: 7622cd23301a67e46b35eeec1b108775, type: 2}
+  partMesh: {fileID: 5744133296114448283, guid: f459238a4ca140a4cab988543cc373ec,
+    type: 3}
+  ownConnectorDistanceOffset: {x: 0, y: 0, z: 0}
+  ownConnectorAngleOffset: {x: 0, y: 0, z: 0}
+  partIndividualHealth: 5
+  partType: 3
+  additionalSpeed: 0
+  additionalRadar: 0
+  additionalAbility: 0

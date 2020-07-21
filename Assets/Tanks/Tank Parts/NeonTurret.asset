@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80e38c97984a84f93d626ea4d6d326, type: 3}
+  m_Name: NeonTurret
+  m_EditorClassIdentifier: 
+  partName: NeonTurret
+  partTexture: {fileID: 2100000, guid: 484e703c69c55d14a870a6d4e6ab3a89, type: 2}
+  partMesh: {fileID: 2093442763688687688, guid: 20606151c394fae4daef2f0520f2b657,
+    type: 3}
+  ownConnectorDistanceOffset: {x: 0, y: 0, z: 0}
+  ownConnectorAngleOffset: {x: 0, y: 0, z: 0}
+  partIndividualHealth: 5
+  partType: 0
+  weaponAccuracy: 0
+  weaponRateoffire: 0
+  firingOffset: {x: 0, y: 0.25, z: 1.6}
+  fireResult: {fileID: 8499640282720226933, guid: 8465154bb2e7574428ad08adaad6c931,
+    type: 3}
+  maxRange: 0

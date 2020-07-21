@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c80e38c97984a84f93d626ea4d6d326, type: 3}
+  m_Name: VanillaMissile
+  m_EditorClassIdentifier: 
+  partName: VanillaMissile
+  partTexture: {fileID: 2100000, guid: 7622cd23301a67e46b35eeec1b108775, type: 2}
+  partMesh: {fileID: -544938258499758054, guid: 393a52c2c832e4942a5fbdde33781981,
+    type: 3}
+  ownConnectorDistanceOffset: {x: 0, y: 0, z: 0}
+  ownConnectorAngleOffset: {x: 0, y: 0, z: 0}
+  partIndividualHealth: 5
+  partType: 0
+  weaponAccuracy: 0.5
+  weaponRateoffire: 0.5
+  firingOffset: {x: 0, y: 0, z: 0}
+  fireResult: {fileID: 0}
+  maxRange: 0
