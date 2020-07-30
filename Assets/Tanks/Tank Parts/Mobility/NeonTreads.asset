@@ -9,18 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c80e38c97984a84f93d626ea4d6d326, type: 3}
-  m_Name: NeonGatling
+  m_Script: {fileID: 11500000, guid: 0b78badb12256524484720f87dbda118, type: 3}
+  m_Name: NeonTreads
   m_EditorClassIdentifier: 
-  partName: NeonGatling
+  partName: NeonTreads
   partTexture: {fileID: 2100000, guid: 484e703c69c55d14a870a6d4e6ab3a89, type: 2}
-  partMesh: {fileID: 3564210889095205444, guid: 8ef9f384b5d4fe6468b2111a23fcd4cf,
+  partMesh: {fileID: 3839667801321663866, guid: 430d6184886c88e41bddcf1fa326d717,
     type: 3}
-  ownConnectorDistanceOffset: {x: 0, y: 0, z: 0}
+  ownConnectorDistanceOffset: {x: 0, y: -0.9, z: 0}
   ownConnectorAngleOffset: {x: 0, y: 0, z: 0}
   partIndividualHealth: 5
-  partType: 0
-  weaponAccuracy: 0
-  weaponRateoffire: 0
-  firingOffset: {x: 0, y: 0, z: 0}
-  fireResult: {fileID: 0}
+  partType: 2
+  maxSpeed: 3
+  accelSpeed: 1
+  turnSpeed: 35
+  canStrafe: 0
