@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TeslaShotBehaviour : MonoBehaviour
+public class TeslaShotBehaviour : WeaponShotScript
 {
 
-    public float ownDamage = 2;
-    public float rayRange = 10;
     public int numberOfPoints = 5;
     float pointDistance;
     Vector3[] pointPosition;
@@ -31,16 +29,16 @@ public class TeslaShotBehaviour : MonoBehaviour
 
     void FireLightning()
     {
-        rayDistance = rayRange;
-        damageRay = new Ray(transform.position, gameObject.transform.forward * rayRange);
-        Debug.DrawRay(transform.position, transform.forward * rayRange, Color.magenta, 5);
+        rayDistance = maxRange;
+        damageRay = new Ray(transform.position, gameObject.transform.forward * maxRange);
+        Debug.DrawRay(transform.position, transform.forward * maxRange, Color.magenta, 5);
         if (Physics.Raycast(damageRay, out castHit))
         {
             if (castHit.rigidbody != null)
             {
                 Debug.Log(castHit.rigidbody);
 
-                if (castHit.rigidbody.transform.parent.GetComponent<ITakesDamage>() != null) { castHit.rigidbody.transform.parent.GetComponent<ITakesDamage>().Damage(ownDamage); }
+                if (castHit.rigidbody.transform.parent.GetComponent<ITakesDamage>() != null) { castHit.rigidbody.transform.parent.GetComponent<ITakesDamage>().Damage(standardDamage); }
                 rayDistance = castHit.distance;
             }
         }

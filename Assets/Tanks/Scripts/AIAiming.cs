@@ -28,7 +28,8 @@ public class AIAiming : MonoBehaviour
     void Update()
     {
         toPlayer = playerGO.transform.position - bodyPart.transform.position;
-        toPlayer.y = bodyPart.transform.position.y;
+        //toPlayer.y = bodyPart.transform.position.y;
+        toPlayer.y = transform.position.y;
         angleBetween = Vector3.Angle(bodyPart.transform.forward, toPlayer);
 
         if (angleBetween <= maxAngle)

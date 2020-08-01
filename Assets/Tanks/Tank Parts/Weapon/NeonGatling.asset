@@ -21,7 +21,14 @@ MonoBehaviour:
   partIndividualHealth: 5
   partType: 0
   weaponAccuracy: 0
-  weaponRateoffire: 0
+  weaponRateoffire: 1
   firingOffset: {x: 0, y: 0, z: 0}
   fireResult: {fileID: 0}
+  fireScript: {fileID: 0}
   maxRange: 0
+  standardDamage: 0
+  shotLifetime: 0
+  shotVelocity: 0
+  barrageDelay: 0
+  barrageSize: 0
+  barrageCount: 0

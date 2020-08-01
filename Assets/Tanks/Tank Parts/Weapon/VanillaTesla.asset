@@ -25,4 +25,12 @@ MonoBehaviour:
   firingOffset: {x: 0, y: 0.1, z: 1}
   fireResult: {fileID: 7162124968470979200, guid: b14dbc47a07eabf42a148e12045bfa34,
     type: 3}
+  fireScript: {fileID: 0}
   maxRange: 20
+  standardDamage: 0
+  shotLifetime: 0
+  shotVelocity: 0
+  barrageDelay: 0
+  barrageSize: 0
+  barrageCount: 0
+  firingObject: {fileID: 0}

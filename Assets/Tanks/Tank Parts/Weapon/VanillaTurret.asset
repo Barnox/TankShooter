@@ -21,8 +21,18 @@ MonoBehaviour:
   partIndividualHealth: 5
   partType: 0
   weaponAccuracy: 0
-  weaponRateoffire: 1
-  firingOffset: {x: 0, y: 0.25, z: 1.6}
+  weaponRateoffire: 0.5
+  firingOffset: {x: 0, y: 0.25, z: 1.7}
   fireResult: {fileID: 8499640282720226933, guid: 8465154bb2e7574428ad08adaad6c931,
     type: 3}
+  fireScript: {fileID: 3004336116444401815, guid: ca77ad9363a1f604da6686082d97d183,
+    type: 3}
   maxRange: 20
+  standardDamage: 2
+  shotLifetime: 1
+  shotVelocity: 20
+  barrageDelay: 0
+  barrageSize: 1
+  barrageCount: 1
+  firingObject: {fileID: 1825850148570636416, guid: dcd982da7b2f17444ba259d7d842f9da,
+    type: 3}
