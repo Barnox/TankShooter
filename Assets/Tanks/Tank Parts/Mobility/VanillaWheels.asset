@@ -20,7 +20,7 @@ MonoBehaviour:
   ownConnectorAngleOffset: {x: 0, y: 0, z: 0}
   partIndividualHealth: 5
   partType: 2
-  maxSpeed: 4
+  maxSpeed: 3
   accelSpeed: 2
   turnSpeed: 40
   canStrafe: 0

@@ -18,14 +18,14 @@ public class TurretShotBehaviour : WeaponShotScript
         ownRigidbody.velocity = transform.forward * shotVelocity;
     }
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collided with " + collision.transform.name);
-        if (collision.transform.parent != null)
+        Debug.Log("Collided with " + other.transform.name);
+        if (other.transform.parent != null)
         {
-            if (collision.gameObject.transform.parent.GetComponent<ITakesDamage>() != null)
-            { 
-                collision.gameObject.transform.parent.GetComponent<ITakesDamage>().Damage(standardDamage); 
+            if (other.gameObject.transform.parent.GetComponent<ITakesDamage>() != null)
+            {
+                other.gameObject.transform.parent.GetComponent<ITakesDamage>().Damage(standardDamage); 
             }
         }
 
