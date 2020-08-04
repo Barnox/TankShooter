@@ -6,11 +6,15 @@ using UnityEngine;
 public class MissileShotBehaviour : WeaponShotScript
 {
     float launchAngle = 30;
-    float homingDelay = .2f;
+    float homingDelay = .5f;
     float homingFrequency = 0.05f;
-    float homingAngle = 10;
+    float homingAngle = 2;
     bool isEntityHoming = true;
     Transform entityHoming;
+    LayerMask maskPlayerEnemy;
+    Collider[] entityTarget;
+
+    BoxCollider ownCollider;
 
     Vector3 vectorToTarget;
 
@@ -21,9 +25,18 @@ public class MissileShotBehaviour : WeaponShotScript
         Destroy(this.gameObject, shotLifetime);
         transform.forward = Vector3.RotateTowards(transform.forward, Vector3.up, launchAngle * Mathf.Deg2Rad, 0);
         InvokeRepeating("TurnTowardsTarget", homingDelay, homingFrequency);
+        Invoke("EnableCollider", homingDelay / 2);
+
+
 
         if (isEntityHoming == true)
-        { entityHoming = (Physics.OverlapSphere(shotTarget, .5f))[0].transform; }
+        {
+            maskPlayerEnemy = LayerMask.GetMask("Player", "Enemy");
+            entityTarget = Physics.OverlapSphere(shotTarget, .5f, maskPlayerEnemy);
+            if (entityTarget.Length != 0) { entityHoming = entityTarget[0].transform; } 
+        }
+
+
     }
 
     // Update is called once per frame
@@ -34,9 +47,11 @@ public class MissileShotBehaviour : WeaponShotScript
 
     void TurnTowardsTarget()
     {
-        if (entityHoming) { shotTarget = entityHoming.position; }
+        if (entityHoming) { shotTarget = entityHoming.position + Vector3.up; }
         vectorToTarget = shotTarget - transform.position;
         transform.forward = Vector3.RotateTowards(transform.forward, vectorToTarget, homingAngle * Mathf.Deg2Rad, 0);
+        transform.forward = Vector3.RotateTowards(transform.forward, Vector3.down, 1 * Mathf.Deg2Rad, 0);
+        transform.forward = Vector3.RotateTowards(transform.forward, new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)), 10 * Mathf.Deg2Rad, 0);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -52,6 +67,11 @@ public class MissileShotBehaviour : WeaponShotScript
 
         Destroy(gameObject);
 
+    }
+
+    void EnableCollider()
+    {
+        GetComponent<BoxCollider>().enabled = true;
     }
 
 

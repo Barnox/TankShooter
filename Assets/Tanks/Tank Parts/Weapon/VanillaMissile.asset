@@ -20,19 +20,19 @@ MonoBehaviour:
   ownConnectorAngleOffset: {x: 0, y: 0, z: 0}
   partIndividualHealth: 5
   partType: 0
-  weaponAccuracy: 0
-  weaponRateoffire: 4
+  weaponAccuracy: 15
+  weaponRateoffire: 2
   firingOffset: {x: 0, y: 0.2, z: 0.6}
   fireResult: {fileID: 3740020956921304264, guid: c0e6e4fa224c4624ca8a8a05ca5c75bb,
     type: 3}
   fireScript: {fileID: 2047572868066178499, guid: ca77ad9363a1f604da6686082d97d183,
     type: 3}
-  maxRange: 20
+  maxRange: 15
   standardDamage: 5
   shotLifetime: 5
-  shotVelocity: 10
+  shotVelocity: 5
   barrageDelay: 0.2
   barrageSize: 1
-  barrageCount: 5
+  barrageCount: 3
   firingObject: {fileID: 1825850148570636416, guid: dcd982da7b2f17444ba259d7d842f9da,
     type: 3}

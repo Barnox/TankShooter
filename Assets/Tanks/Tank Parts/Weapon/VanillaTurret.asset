@@ -21,7 +21,7 @@ MonoBehaviour:
   partIndividualHealth: 5
   partType: 0
   weaponAccuracy: 0
-  weaponRateoffire: 0.5
+  weaponRateoffire: 1
   firingOffset: {x: 0, y: 0.25, z: 1.7}
   fireResult: {fileID: 8499640282720226933, guid: 8465154bb2e7574428ad08adaad6c931,
     type: 3}
